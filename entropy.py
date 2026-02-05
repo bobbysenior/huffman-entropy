@@ -19,11 +19,11 @@ def compute_entropy(data) -> float:
     for byte in data:
         freq[byte] += 1
 
-    freq = [1 for _ in range(255)]
-
     # Compute the frequency of each byte
     size = len(data)
     for i in range(len(freq)):
+        if freq[i] == 0:
+            continue
         freq[i] = freq[i] / size
 
     H = 0
