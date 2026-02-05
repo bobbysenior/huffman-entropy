@@ -1,1 +1,7 @@
-# huffman-entropy
+# Information theory fun
+
+Just a simple repository to test some of the stuff I learned in class.
+
+# Entropy calculator
+
+The first program "entropy.py" is used to compute the entropy of a given file (based on the bytes).
